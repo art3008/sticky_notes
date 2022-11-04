@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: #d9b38d;
+}
+
+.container{
+    width: 1280px;
+    margin: auto;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 20px;
+    color: white;
+}
+
+#header button {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d9b38d;
+    color: white;
+}
+
+
+
+@media (max-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.note_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#inner_modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#inner_modal textarea {
+    width: 276px;
+    height: 276px;
+    padding: 25px;
+    outline: none;
+    resize: none;
+    font-size: 1.5rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+
+}
+
+#all_notes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.note{
+    width: 300px;
+    height: 300px;
+    transition: 2s;
+    cursor: pointer;
+    overflow-wrap: break-word;
+    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+}
+
+
+.details {
+    margin-top: 25px;
+    padding: 0 15px;
+    font-size: 1.5rem;
+}
+
