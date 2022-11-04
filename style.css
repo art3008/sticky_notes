@@ -80,6 +80,17 @@ button:hover {
     min-height: 100vh;
 }
 
+
+#inner_modal i {
+    font-size: 1.4rem;
+    color: gray;
+    cursor: pointer;
+    margin-top: -235px;
+    margin-left: -35px;
+    transition: 1s ease-in-out;
+
+}
+
 #inner_modal textarea {
     width: 276px;
     height: 276px;
@@ -96,16 +107,17 @@ button:hover {
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 10px;
-    background-color: #d9b38d;
+    /* background-color: #d9b38d; */
 }
 
 .note{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     transition: 2s;
     cursor: pointer;
     overflow-wrap: break-word;
     box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+    background-color: red;
 }
 
 
